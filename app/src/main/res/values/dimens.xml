@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Dimens for all other phones -->
+
+    <dimen name="forecast_margin">6dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="temperature_size">35dp</dimen>
+    <dimen name="temperature_string_size">16dp</dimen>
+    <dimen name="wind_speed_size">22dp</dimen>
+    <dimen name="weather_description_size">16dp</dimen>
+    <dimen name="daytime_size">20dp</dimen>
+
+    <dimen name="place_forecast_name_size">25dp</dimen>
+    <dimen name="place_forecast_temp_size">20dp</dimen>
+</resources>

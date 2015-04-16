@@ -1,0 +1,88 @@
+
+<resources>
+
+    <string name="app_name">Ilmateade</string>
+
+    <string name="detailDescription"><u>Ilma kirjeldus</u></string>
+
+    <string name="dismiss">Sule</string>
+
+    <string name="day">PÄEV</string>
+    <string name="night">ÖÖ</string>
+
+    <string name="to">kuni</string>
+    <string name="degrees">kraadi</string>
+
+    <string name="clear">Selge</string>
+    <string name="few_clouds">Vähene pilvisus</string>
+    <string name="variable_clouds">Vahelduv pilvisus</string>
+    <string name="cloudy_with_clear_spells">Pilves selgimistega</string>
+    <string name="cloudy">Pilves</string>
+    <string name="light_snow_shower">Nõrk hooglumi</string>
+    <string name="moderate_snow_shower">Mõõdukas hooglumi</string>
+    <string name="heavy_snow_shower">Tugev hooglumi</string>
+    <string name="light_shower">Nõrk hoogvihm</string>
+    <string name="moderate_shower">Mõõdukas hoogvihm</string>
+    <string name="heavy_shower">Tugev hoogvihm</string>
+    <string name="light_rain">Nõrk vihm</string>
+    <string name="moderate_rain">Mõõdukas vihm</string>
+    <string name="heavy_rain">Tugev vihm</string>
+    <string name="risk_of_glaze">Jäiteoht</string>
+    <string name="light_sleet">Nõrk lörtsisadu</string>
+    <string name="moderate_sleet">Mõõdukas lörtsisadu</string>
+    <string name="light_snowfall">Nõrk lumesadu</string>
+    <string name="moderate_snowfall">Mõõdukas lumesadu</string>
+    <string name="heavy_snowfall">Tugev lumesadu</string>
+    <string name="snowstorm">Üldtuisk</string>
+    <string name="drifting_snow">Pinnatuisk</string>
+    <string name="hail">Rahe</string>
+    <string name="mist">Uduvine</string>
+    <string name="fog">Udu</string>
+    <string name="thunder">Äike</string>
+    <string name="thunderstorm">Äikesevihm</string>
+    <string name="unknown"></string>
+
+    <string name = "minus">miinus</string>
+    <string name = "plus">pluss</string>
+
+    <string name = "zero">null</string>
+    <string name = "one">üks</string>
+    <string name = "two">kaks</string>
+    <string name = "three">kolm</string>
+    <string name = "four">neli</string>
+    <string name = "five">viis</string>
+    <string name = "six">kuus</string>
+    <string name = "seven">seitse</string>
+    <string name = "eight">kaheksa</string>
+    <string name = "nine">üheksa</string>
+    <string name = "ten">kümme</string>
+    <string name = "eleven">üksteist</string>
+    <string name = "twelve">kaksteist</string>
+    <string name = "thirteen">kolmteist</string>
+    <string name = "fourteen">neliteist</string>
+    <string name = "fifteen">viisteist</string>
+    <string name = "sixteen">kuusteist</string>
+    <string name = "seventeen">seitseteist</string>
+    <string name = "eighteen">kaheksateist</string>
+    <string name = "nineteen">üheksateist</string>
+    <string name = "twenty">kakskümmend</string>
+    <string name = "thirty">kolmkümmend</string>
+    <string name = "forty">nelikümmend</string>
+    <string name = "fifty">viiskümmend</string>
+    <string name = "sixty">kuuskümmend</string>
+    <string name = "seventy">seitsekümmend</string>
+    <string name = "eighty">kaheksakümmend</string>
+    <string name = "ninety">üheksakümmend</string>
+
+    <string name="loading">Laadin</string>
+    <string name="error">Viga laadimisel</string>
+    <string name="try_again">Proovi uuesti</string>
+
+    <string name="drawer_open">Ava navigatsiooni sahtel</string>
+    <string name="drawer_close">Sule navigatsiooni sahtel</string>
+
+    <string name="internal_error">Süsteemi viga</string>
+    <string name="no_connectivity">Internetiühendus puudub</string>
+
+
+</resources>

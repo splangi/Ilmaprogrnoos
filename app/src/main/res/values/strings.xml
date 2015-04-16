@@ -1,0 +1,85 @@
+
+<resources>
+    <string name="app_name">EST weather</string>
+
+    <string name="detailDescription"><u>Weather description</u></string>
+
+    <string name="dismiss">Dismiss</string>
+
+    <string name="day">day</string>
+    <string name="night">night</string>
+
+    <string name="to">to</string>
+    <string name="degrees">degrees</string>
+
+    <string name="clear">Clear</string>
+    <string name="few_clouds">Few clouds</string>
+    <string name="variable_clouds">Variable clouds</string>
+    <string name="cloudy_with_clear_spells">Cloudy with clear spells</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="light_snow_shower">Light snow shower</string>
+    <string name="moderate_snow_shower">Moderate snow shower</string>
+    <string name="heavy_snow_shower">Heavy snow shower</string>
+    <string name="light_shower">Light shower</string>
+    <string name="moderate_shower">Moderate shower</string>
+    <string name="heavy_shower">Heavy shower</string>
+    <string name="light_rain">Light rain</string>
+    <string name="moderate_rain">Moderate rain</string>
+    <string name="heavy_rain">Heavy rain</string>
+    <string name="risk_of_glaze">Risk of glaze</string>
+    <string name="light_sleet">Light sleet</string>
+    <string name="moderate_sleet">Moderate sleet</string>
+    <string name="light_snowfall">Light snowfall</string>
+    <string name="moderate_snowfall">Moderate snowfall</string>
+    <string name="heavy_snowfall">Heavy snowfall</string>
+    <string name="snowstorm">Snowstorm</string>
+    <string name="drifting_snow">Drifting snow</string>
+    <string name="hail">Hail</string>
+    <string name="mist">Mist</string>
+    <string name="fog">Fog</string>
+    <string name="thunder">Thunder</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="unknown"></string>
+
+    <string name = "minus">minus</string>
+    <string name = "plus">plus</string>
+
+    <string name = "zero">zero</string>
+    <string name = "one">one</string>
+    <string name = "two">two</string>
+    <string name = "three">three</string>
+    <string name = "four">four</string>
+    <string name = "five">five</string>
+    <string name = "six">six</string>
+    <string name = "seven">seven</string>
+    <string name = "eight">eight</string>
+    <string name = "nine">nine</string>
+    <string name = "ten">ten</string>
+    <string name = "eleven">eleven</string>
+    <string name = "twelve">twelve</string>
+    <string name = "thirteen">thirteen</string>
+    <string name = "fourteen">fourteen</string>
+    <string name = "fifteen">fifteen</string>
+    <string name = "sixteen">sixteen</string>
+    <string name = "seventeen">seventeen</string>
+    <string name = "eighteen">eighteen</string>
+    <string name = "nineteen">nineteen</string>
+    <string name = "twenty">twenty</string>
+    <string name = "thirty">thirty</string>
+    <string name = "forty">forty</string>
+    <string name = "fifty">fifty</string>
+    <string name = "sixty">sixty</string>
+    <string name = "seventy">seventy</string>
+    <string name = "eighty">eighty</string>
+    <string name = "ninety">ninety</string>
+
+    <string name="loading">Loading</string>
+    <string name="error">Error loading data</string>
+    <string name="try_again">Try again</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="internal_error">System internal error</string>
+    <string name="no_connectivity">No network connection</string>
+</resources>

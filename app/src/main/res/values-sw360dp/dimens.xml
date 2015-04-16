@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimens for Nexus 5, HTC One, S5 -->
+
+    <dimen name="forecast_margin">10dp</dimen>
+
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="temperature_size">40dp</dimen>
+    <dimen name="temperature_string_size">16dp</dimen>
+    <dimen name="wind_speed_size">25dp</dimen>
+    <dimen name="weather_description_size">20dp</dimen>
+    <dimen name="daytime_size">20dp</dimen>
+
+    <dimen name="place_forecast_height">80dp</dimen>
+    <dimen name="place_forecast_width">150dp</dimen>
+    <dimen name="place_forecast_name_size">30dp</dimen>
+    <dimen name="place_forecast_temp_size">25dp</dimen>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ee.siimplangi.ilmaprognoos.views.PlaceForecastView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/forecast_margin">
+
+    <TextView
+        android:id="@+id/placeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/placePhenomenonIcon"
+        android:fontFamily="sans-serif-light"
+        android:text="Tartu"
+        android:textColor="#FFF"
+        android:textSize="@dimen/place_forecast_name_size" />
+
+
+    <ImageView
+        android:id="@+id/placePhenomenonIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/placeName"
+        android:layout_alignTop="@id/placeName"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/place_forecast_name_size"
+        android:minHeight="@dimen/place_forecast_temp_size"
+        android:src="@drawable/icon_sunny" />
+
+    <TextView
+        android:id="@+id/placeTempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/placeName"
+        android:layout_below="@+id/placeName"
+        android:fontFamily="sans-serif-light"
+        android:text="3..4C"
+        android:textColor="#FFF"
+        android:textSize="@dimen/place_forecast_temp_size" />
+
+
+</ee.siimplangi.ilmaprognoos.views.PlaceForecastView>
+

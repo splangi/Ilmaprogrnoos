@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forecastContentWindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- Actionbar for edit mode
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="#000"
+        />
+
+     -->
+
+
+
+        <include
+            android:id="@+id/dayForecast"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/forecast_margin"
+            layout="@layout/forecast"></include>
+
+
+        <include
+            android:id="@+id/nightForecast"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/forecast_margin"
+            layout="@layout/forecast"></include>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/placesForecastContentWindow"
+            android:layout_width="fill_parent"
+            android:divider="@drawable/horizontal_line"
+            android:showDividers="middle"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!-- Views for testing in edit mode
+            <include layout="@layout/place_forecast"></include>
+            <include layout="@layout/place_forecast"></include>
+            <include layout="@layout/place_forecast"></include>
+            <include layout="@layout/place_forecast"></include>
+             -->
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

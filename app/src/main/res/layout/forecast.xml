@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ee.siimplangi.ilmaprognoos.views.ForecastView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+
+    <TextView
+        android:id="@+id/dayTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/daytime_size" />
+
+
+    <ImageView
+        android:id="@+id/logoThermometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tempSentenceTextView"
+        android:layout_alignTop="@+id/tempTextView"
+        android:layout_toLeftOf="@+id/windSpeedTextView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/thermometer" />
+
+
+    <ee.siimplangi.ilmaprognoos.views.AutoResizeTextView
+        android:id="@+id/tempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logoThermometer"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/temperature_size" />
+
+    <ee.siimplangi.ilmaprognoos.views.AutoResizeTextView
+        android:id="@+id/tempSentenceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempTextView"
+        android:layout_toRightOf="@+id/logoThermometer"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/temperature_string_size" />
+
+
+    <ImageView
+        android:id="@+id/logoWind"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/windSpeedTextView"
+        android:layout_alignTop="@+id/windSpeedTextView"
+        android:layout_below="@id/logoThermometer"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_gust_white" />
+
+    <ee.siimplangi.ilmaprognoos.views.AutoResizeTextView
+        android:id="@+id/windSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempSentenceTextView"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/logoWind"
+        android:fontFamily="sans-serif-light"
+        android:textSize="@dimen/wind_speed_size" />
+
+
+    <ImageView
+        android:id="@+id/forecastIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/windSpeedTextView"
+        android:layout_above="@+id/weatherDescriptionTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/weatherDescriptionTextView"
+        android:layout_below="@id/tempSentenceTextView"
+        android:scaleType="fitEnd" />
+
+    <TextView
+        android:id="@+id/weatherDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:gravity="right"
+        android:text="@string/detailDescription"
+        android:textSize="@dimen/weather_description_size" />
+
+
+</ee.siimplangi.ilmaprognoos.views.ForecastView>
