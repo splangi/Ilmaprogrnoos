@@ -1,6 +1,7 @@
 package ee.siimplangi.ilmaprognoos.views;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -8,16 +9,19 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import ee.siimplangi.ilmaprognoos.utils.IntervalSentence;
+import ee.siimplangi.ilmaprognoos.MainActivity;
 import ee.siimplangi.ilmaprognoos.R;
 import ee.siimplangi.ilmaprognoos.data.DayTime;
 import ee.siimplangi.ilmaprognoos.data.Forecast;
 import ee.siimplangi.ilmaprognoos.data.Phenomenon;
+import ee.siimplangi.ilmaprognoos.utils.IntervalSentence;
 
 /**
  * Created by Siim on 10.04.2015.
  */
 public class ForecastView extends RelativeLayout{
+
+
 
     private static final String TAG = "ForecastView";
     private TextView tempNumberTextView;
@@ -28,8 +32,11 @@ public class ForecastView extends RelativeLayout{
     private ImageView logoWindSpeed;
     private ImageView forecastIcon;
 
+    private MainActivity mainActivity;
+
     public ForecastView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        mainActivity = (MainActivity) context;
     }
 
     private void init(){
@@ -73,9 +80,12 @@ public class ForecastView extends RelativeLayout{
         weatherDescriptionTextView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                String title = getResources().getString(forecast.getPhenomenon().getStringId());
-                String text = forecast.getText();
-                new WeatherDescriptionDialog(getContext(), title, text, R.style.dialogTheme);
+                Bundle args = new Bundle();
+                args.putString(WeatherDescriptionDialog.PHENOMENON_KEY, getResources().getString(forecast.getPhenomenon().getStringId()));
+                args.putString(WeatherDescriptionDialog.DESCRIPTION_KEY, forecast.getText());
+                WeatherDescriptionDialog dialog = new WeatherDescriptionDialog();
+                dialog.setArguments(args);
+                dialog.show(mainActivity.getFragmentManager(), "WeatherDescriptionDialog");
             }
         });
     }

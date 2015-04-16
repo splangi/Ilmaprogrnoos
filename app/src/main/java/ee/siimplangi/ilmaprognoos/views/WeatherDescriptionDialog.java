@@ -1,32 +1,37 @@
 package ee.siimplangi.ilmaprognoos.views;
 
 import android.app.AlertDialog;
-import android.content.Context;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.DialogInterface;
+import android.os.Bundle;
 
 import ee.siimplangi.ilmaprognoos.R;
 
 /**
  * Created by Siim on 13.04.2015.
  */
-public class WeatherDescriptionDialog extends AlertDialog {
+public class WeatherDescriptionDialog extends DialogFragment {
+
+    public static final String PHENOMENON_KEY = "phenomenonKey";
+    public static final String DESCRIPTION_KEY = "descriptionKey";
 
 
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        Bundle args = getArguments();
 
-    protected WeatherDescriptionDialog(Context context, String phenomenon, String description, int style) {
-        super(context, style);
-        setTitle(phenomenon);
-        setMessage(description);
-        setCanceledOnTouchOutside(true);
-        setCancelable(true);
-        setButton(BUTTON_NEUTRAL, context.getString(R.string.dismiss), new OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dismiss();
-            }
-        });
-
-        show();
+        return new AlertDialog.Builder(getActivity())
+                .setTitle(args.getString(PHENOMENON_KEY))
+                .setMessage(args.getString(DESCRIPTION_KEY))
+                .setNeutralButton(R.string.dismiss, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dismiss();
+                    }
+                })
+                .setCancelable(true)
+                .create();
     }
 
 
